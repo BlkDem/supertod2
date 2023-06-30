@@ -27,6 +27,15 @@
 
 <style lang="scss" scoped>
 
+li {
+  font-size: 1.2rem;
+  // line-height: 2;
+}
+
+li::before {
+  content: '►';
+  margin: 0 4px;
+}
 .logo-panel {
   display: flex;
   flex-direction: column;
