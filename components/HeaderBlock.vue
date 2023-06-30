@@ -2,9 +2,9 @@
   <!-- ***HEADER*** -->
   <section id="header" class="presentation">
     <b-container>
-      <b-row>
+      <b-row class="row-center">
         <!-- <b-col md="6" ></b-col> -->
-        <b-col md="6" offset-md="6" class="logo-panel">
+        <b-col md="6" offset-lg="6" class="logo-panel">
 
           <div class="mb-4">
             <img src="img/logo2.png" class="logo" />
@@ -44,6 +44,12 @@
   height: 400px;
 }
 
+@media screen and (max-width: 500px) {
+  .presentation {
+    background-size: 150% auto;
+  }
+}
+
 .check-list {
   padding-left: 24px;
     background-color: rgba(200, 200, 200, .5);
@@ -61,5 +67,9 @@
     transform: skew(-10deg, 0deg);
     padding-bottom: 16px;
     // margin-bottom: 36px;
+}
+
+.row-center {
+  justify-content: center;
 }
 </style>
