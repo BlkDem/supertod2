@@ -10,9 +10,12 @@
             <img src="img/logo2.png" class="logo" />
           </div>
           <ul class="check-list list-unstyled logo-ul">
-            <li><span class="glyphicon glyphicon-ok"></span>Ручное управление раздаточной коробкой</li>
-            <li><span class="glyphicon glyphicon-ok"></span>Удовольствие от "классического" привода 2Н</li>
-            <li><span class="glyphicon glyphicon-ok"></span>Надежность прохождения сложных участков в 4Н</li>
+            <li><b-icon icon="check-square" scale="1"></b-icon>
+              Ручное управление раздаточной коробкой</li>
+            <li><b-icon icon="check-square" scale="1"></b-icon>
+              Удовольствие от "классического" привода 2Н</li>
+            <li><b-icon icon="check-square" scale="1"></b-icon>
+              Надежность прохождения сложных участков в 4Н</li>
           </ul>
           <h3 class="shop-link">
             <b-button block size="lg">
@@ -32,10 +35,10 @@ li {
   // line-height: 2;
 }
 
-li::before {
-  content: '►';
-  margin: 0 4px;
-}
+// li::before {
+//   content: '►';
+//   margin: 0 4px;
+// }
 .logo-panel {
   display: flex;
   flex-direction: column;

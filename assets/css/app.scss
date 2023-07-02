@@ -1,0 +1,19 @@
+html, body {
+  color: white;
+  background-color: darkgray;
+}
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1370px;
+  }
+}
+
+h1 {
+  background: rgb(242,242,242);
+  background: -moz-linear-gradient(0deg, rgba(242,242,242,1) 0%, rgba(231,231,231,1) 4%, rgba(104,143,141,1) 8%, rgba(104,143,141,1) 92%, rgba(231,231,231,1) 96%, rgba(104,143,141,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(242,242,242,1) 0%, rgba(231,231,231,1) 4%, rgba(104,143,141,1) 8%, rgba(104,143,141,1) 92%, rgba(231,231,231,1) 96%, rgba(104,143,141,1) 100%);
+  /* background: linear-gradient(0deg, rgba(242,242,242,1) 0%, rgba(231,231,231,1) 4%, rgba(104,143,141,1) 8%, rgba(104,143,141,1) 92%, rgba(231,231,231,1) 96%, rgba(104,143,141,1) 100%); */
+  background: linear-gradient(0deg, rgba(242,242,242,1) 0%, rgba(231,231,231,1) 4%, rgb(121 121 121) 8%, rgb(70 68 69) 92%, rgba(231,231,231,1) 96%, rgb(167 163 160) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f2f2",endColorstr="#688f8d",GradientType=1);
+}
