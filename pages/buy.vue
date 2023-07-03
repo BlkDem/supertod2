@@ -140,13 +140,6 @@ import DefaultLayout from '~/layout/DefaultLayout.vue'
 section {
   padding: 32px 0;
 }
-
-.yellow-active {
-  color: $yellow-active;
-}
-.yellow-inactive {
-  color: $yellow-inactive;
-}
 .buy-block {
   padding: 4px 4px;
   background-color: white;

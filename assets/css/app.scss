@@ -12,6 +12,13 @@ html, body {
   box-sizing: border-box;
 }
 
+.yellow-active {
+  color: $yellow-active;
+}
+.yellow-inactive {
+  color: $yellow-inactive;
+}
+
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1370px;
@@ -50,7 +57,7 @@ h1 {
 
 section {
   // background: #2f3f4e url(/bg/set-tekstura-shariki.jpg) right;
-  background: #2f3f4e url(/bg/plastik-70.png) right;
+  background: #2f3f4e url(/bg/plastik-70.png);
   background-size: 100% auto;
 }
 

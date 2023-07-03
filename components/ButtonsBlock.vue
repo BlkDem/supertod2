@@ -8,10 +8,10 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="buttons w-100">
+        <li class="nav-item"><a class="nav-link!" href="/">Версии</a></li>
         <li class="nav-item"><a class="nav-link!" href="/about">О SuperTOD</a></li>
         <li class="nav-item"><a class="nav-link!" href="/st3">ST-III</a></li>
         <li class="nav-item"><a class="nav-link!" href="/pluses">Плюсы</a></li>
-        <li class="nav-item"><a class="nav-link!" href="/versions">Версии</a></li>
         <li class="nav-item"><a class="nav-link!" href="/gallery">Галерея</a></li>
         <li class="nav-item"><a class="nav-link!" href="/reviews">Отзывы</a></li>
         <li class="nav-item"><a class="nav-link!" href="/buy">Купить</a></li>

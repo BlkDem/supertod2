@@ -18,7 +18,7 @@
 
             <b-col md="8" xs="12">
                <div>
-               <h3>Устройства Umolab Group (BlkDem)</h3>
+               <h2>Устройства Umolab Group (BlkDem)</h2>
                <p>SuperTOD II, или Супертод 2/3, устройство, предназначенное для ручного управления раздаточной коробкой автомобилей KIA Sorento BL 2002-2009, 2011 годов выпуска и других автомобилей,
                оснащенных совместимой трансмиссией. </p>
                </div>
@@ -115,11 +115,35 @@ h1 {
   box-shadow: inset 0 0 8px grey;
   @include border-radius-4px;
 }
+
+h2 {
+  background-color: white;
+  color: $yellow-dark;
+  text-align: center;
+  padding-bottom: 8px;
+  padding-top: 4px;
+  border-radius: 8px;
+}
 .main-img{
   width: 100%;
 }
 .img-responsive {
   width:100%;
   mix-blend-mode: difference;
+  border-radius: 8px;
+}
+
+.row {
+  // margin-left: 35px;
+  // margin-right: 35px;
+  // margin-bottom: 35px;
+  margin: 36px 36px;
+}
+
+@media (max-width: 500px) {
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
 </style>
