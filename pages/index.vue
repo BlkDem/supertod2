@@ -182,7 +182,7 @@ h2 {
   border-radius: 8px;
 }
 .row {
-  margin: 36px 36px;
+  margin: 36px 0px;
   border-radius: 8px;
   box-shadow: 0 0 4px $yellow-active;
 }

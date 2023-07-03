@@ -18,7 +18,7 @@
               Надежность прохождения сложных участков в 4Н</li>
           </ul>
           <h3 class="shop-link">
-            <b-button block size="lg">
+            <b-button @click="goShop()" block size="lg">
               <i class="fas fa-shopping-cart"></i>
               Купить
             </b-button></h3>
@@ -27,6 +27,14 @@
     </b-container>
   </header>
 </template>
+
+<script setup lang="ts">
+
+function goShop() {
+  window.location.href="https://umolab-devices.com"
+}
+
+</script>
 
 <style lang="scss" scoped>
 

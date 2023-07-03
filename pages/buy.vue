@@ -28,7 +28,7 @@
                   </ol>
                   <div class="buy-block">
                     <h2 class="text-center"> 4 900 ₽</h2>
-                    <b-button block size="lg" bold>
+                    <b-button @click="goShop('https://umolab-devoces.com/mini')" block size="lg" bold>
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
                     </b-button>
@@ -56,7 +56,7 @@
                   </ol>
                   <div class="buy-block">
                     <h2 class="text-center">8 700 ₽</h2>
-                    <b-button block size="lg">
+                    <b-button @click="goShop('https://umolab-devoces.com/lcd')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
                     </b-button>
@@ -81,7 +81,7 @@
                   </ol>
                   <div class="buy-block">
                     <h2 class="text-center">7 900 ₽</h2>
-                    <b-button block size="lg">
+                    <b-button @click="goShop('https://umolab-devoces.com/gm')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
                     </b-button>
@@ -106,7 +106,7 @@
                   </ol>
                   <div class="buy-block">
                     <h2 class="text-center">9 500 ₽</h2>
-                    <b-button block size="lg">
+                    <b-button @click="goShop('https://umolab-devoces.com/st3')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
                     </b-button>
@@ -125,6 +125,11 @@
 
 <script setup lang="ts">
 import DefaultLayout from '~/layout/DefaultLayout.vue'
+
+function goShop(link: string) {
+  window.location.href=link
+}
+
 </script>
 
 <style lang="scss" scoped>
