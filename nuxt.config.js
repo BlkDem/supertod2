@@ -44,6 +44,7 @@ export default {
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css',
     '@assets/css/app.scss',
+    '@assets/css/consts.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -58,21 +59,25 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    '@nuxtjs/style-resources',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
-    // 'bootstrap-vue/nuxt', {
-    //   icons: true
-    // },
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
   ],
 
   bootstrapVue: {
     icons: true
+  },
+
+  styleResources: {
+    scss: [
+        '~/assets/css/consts.scss',
+    ]
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

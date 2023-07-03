@@ -1,11 +1,11 @@
 <template>
-  <div class="nav-gradient w-100 text-center footer">
+  <footer class="nav-gradient w-100 text-center footer">
     Umolab &copy; 2023
-  </div>
+  </footer>
 </template>
 
 <style lang="scss" scoped>
-.footer {
+footer {
   display: flex;
   height: 64px;
   color: white;

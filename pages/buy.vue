@@ -4,7 +4,9 @@
     <template v-slot:main>
       <section name="buy">
         <div class="container">
-        <h1 class="text-center">Заказать устройство</h1>
+          <div class="page">
+        <h1 class="text-left px-4"><b-icon icon="cart2" scale="1.2" class="mr-2"></b-icon> Купить</h1>
+        <!-- <div class="h1-selected"></div> -->
         <b-row>
             <!-- <p class="lead text-center"></p> -->
             <!--standart-->
@@ -20,19 +22,17 @@
 
                 <div class="body">
                   <ol>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2"></b-icon>Самое доступное устройство</li>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2"></b-icon>Полный функционал</li>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2"></b-icon>Переключатель на три положения</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Самое доступное устройство</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Полный функционал</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Переключатель на три положения</li>
                   </ol>
                   <div class="buy-block">
                     <h2 class="text-center"> 4 900 ₽</h2>
-                    <b-button block size="lg">
+                    <b-button block size="lg" bold>
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
                     </b-button>
                   </div>
-                  <!-- <a href="https://umolab-devices.com/index.php?route=product/product&amp;product_id=50" target="_blank"
-                  class="btn btn-default w-100"> Заказать</a> -->
                 </div>
               </b-card>
             </b-col>
@@ -48,11 +48,11 @@
                 </div>
                 <div class="body">
                   <ol>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2"></b-icon>Обновленная версия 3.7 </li>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2"></b-icon>Устанавливается на место штатного "компаса" </li>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2"></b-icon>Управляется штатными кнопками</li>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2"></b-icon>Упрощено программмирование</li>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2"></b-icon>Регулируемая яркость</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Обновленная версия 3.7 </li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Устанавливается на место штатного "компаса" </li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Управляется штатными кнопками</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Упрощено программмирование</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Регулируемая яркость</li>
                   </ol>
                   <div class="buy-block">
                     <h2 class="text-center">8 700 ₽</h2>
@@ -75,9 +75,9 @@
                 </div>
                 <div class="body">
                   <ol>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2"></b-icon>Самая технологичная версия</li>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2"></b-icon>Максимальное удобство управления</li>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2"></b-icon>Качественный селектор</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Самая технологичная версия</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Максимальное удобство управления</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Качественный селектор</li>
                   </ol>
                   <div class="buy-block">
                     <h2 class="text-center">7 900 ₽</h2>
@@ -100,9 +100,9 @@
                 </div>
                 <div class="body">
                   <ol>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2"></b-icon>Выносной пульт управления </li>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2"></b-icon>Яркий хорошо читаемый OLED дисплей</li>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2"></b-icon>Программируемые функции</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Выносной пульт управления </li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Яркий хорошо читаемый OLED дисплей</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Программируемые функции</li>
                   </ol>
                   <div class="buy-block">
                     <h2 class="text-center">9 500 ₽</h2>
@@ -115,6 +115,7 @@
               </b-card>
             </b-col>
           </b-row>
+        </div>
         </div>
       </section>
     </template>
@@ -132,37 +133,60 @@ import DefaultLayout from '~/layout/DefaultLayout.vue'
   border-radius: 4px;
 }
 
+@mixin inset-shadow-4px {
+  box-shadow: inset 0 0 4px black;
+}
+
+section {
+  padding: 32px 0;
+}
+
+.yellow-active {
+  color: $yellow-active;
+}
+.yellow-inactive {
+  color: $yellow-inactive;
+}
 .buy-block {
   padding: 4px 4px;
   background-color: white;
   border-radius: 4px;
 }
 
-section {
-  // background-image: url(/img/bg/bg3.jpg);
-  // background: #2f3f4e url(/bg/tekstura-59.jpg) right no-repeat;
-  background: #2f3f4e url(/bg/set-tekstura-shariki.jpg) right;
-  background-size: 100% auto;
-  padding: 32px 0;
+h1 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  padding-top: 8px;
+  // border: 2px solid $yellow-inactive;
+
+  background-color: #6a6f4d;
+  box-shadow: inset 0 0 8px grey;
+  @include border-radius-4px;
 }
 
-h1 {
-  background-color: #2f3f4e;
-  margin: 8px 0;
-  padding-bottom: 16px;
-  padding-top: 8px;
+.h1-selected {
+  position: absolute;
+  background-color: $yellow-inactive;
+  // background-color: $yellow-active;
+  padding: 2px 2px;
+  width: 59px;
+  height: 28px;
+  margin-top: -74px;
+  margin-left: 25px;
+  @include inset-shadow-4px;
   @include border-radius-4px;
 }
 
 h2 {
   font-size: 2.5rem;
-  color: #ccd97b;
+  color: $yellow-active;
 }
 
 h3 {
   // padding-bottom: 8px;
   padding-top: 4px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 ol {
@@ -179,37 +203,6 @@ ol {
   list-style: none;
 }
 
-.card {
-  box-shadow: 0 0 8px black;
-}
-.card-gradient {
-      /* background-color: white; */
-      background: rgb(242,242,242);
-    background: -moz-linear-gradient(0deg, rgba(242,242,242,0) 0%, rgba(104,143,141,1) 4%, rgba(255,255,255,1) 49%, rgba(104,143,141,1) 96%, rgba(255,255,255,0) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(242,242,242,0) 0%, rgba(104,143,141,1) 4%, rgba(255,255,255,1) 49%, rgba(104,143,141,1) 96%, rgba(255,255,255,0) 100%);
-    /* background: linear-gradient(0deg, rgba(242,242,242,0) 0%, rgba(104,143,141,1) 4%, rgba(255,255,255,1) 49%, rgba(104,143,141,1) 96%, rgba(255,255,255,0) 100%); */
-    /* background: linear-gradient(0deg, rgba(242,242,242,0) 0%, rgb(76 74 75) 4%, rgb(203 202 200) 49%, rgb(71 70 70) 96%, rgba(255,255,255,0) 100%); */
-    background: linear-gradient(0deg,
-    rgba(242,242,242,0) 0%,
-    rgb(76 74 75) 1%,
-    rgb(88 87 86) 3%,
-    rgb(71 70 70) 99%,
-    rgba(255,255,255,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f2f2",endColorstr="#ffffff",GradientType=1);
-}
-
-.card-head {
-  background-color: #6a6f4d;
-  box-shadow: inset 0 0 4px black;
-  @include border-radius-4px;
-}
-.card-body {
-  padding: 1rem;
-  min-height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
 
 .image {
   padding: 16px 4px;

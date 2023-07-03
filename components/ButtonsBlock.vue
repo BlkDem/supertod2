@@ -1,6 +1,6 @@
 <template>
   <!-- ***HEADER*** -->
-  <section id="header" class="presentation">
+  <section class="presentation">
 
   <b-navbar toggleable="lg" type="dark" class="nav-gradient justify-content-center">
 

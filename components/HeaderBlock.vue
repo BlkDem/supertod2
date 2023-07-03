@@ -1,6 +1,6 @@
 <template>
   <!-- ***HEADER*** -->
-  <section id="header" class="presentation">
+  <header class="presentation">
     <b-container>
       <b-row class="row-center">
         <!-- <b-col md="6" ></b-col> -->
@@ -25,7 +25,7 @@
           </b-col>
       </b-row>
     </b-container>
-  </section>
+  </header>
 </template>
 
 <style lang="scss" scoped>
@@ -64,8 +64,8 @@ li {
 
 .check-list {
   padding-left: 24px;
-    background-color: rgba(200, 200, 200, .5);
-    padding-top: 12px;
+  background-color: $check-list-color;
+  padding-top: 12px;
 }
 .logo {
     /*margin-left: -28px;*/

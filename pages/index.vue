@@ -1,7 +1,7 @@
 <template>
-  <DefaultLayout>
+  <DefaultLayout v-once>
     <template v-slot:main>
-      main
+
     </template>
   </DefaultLayout>
 </template>
