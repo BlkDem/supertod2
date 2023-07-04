@@ -12,7 +12,7 @@
           <div md="8" class="pt-2 card-version">
             <div class="m-4">
               <h2>Версии</h2>
-              <div class="gallery-images">
+              <div class="gallery-images my-4">
                 <a href="https://ibb.co/VMNzkyQ" target="_blank" class="p-1">
                   <img src="https://i.ibb.co/VMNzkyQ/phpthumb-ctx-web-w-1000-h-1000-zc-0-far-q-90-src-assets-gallery-1-8.jpg"
                     alt="phpthumb-ctx-web-w-1000-h-1000-zc-0-far-q-90-src-assets-gallery-1-8" border="0"></a>
