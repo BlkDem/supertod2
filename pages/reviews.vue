@@ -4,7 +4,7 @@
       <section name="reviews">
         <div class="container">
           <div class="page">
-            <h1 class="text-left px-4"><b-icon icon="info-square" scale="1.2" class="mr-2"></b-icon> Отзывы</h1>
+            <h1 class="text-left px-4"><b-icon icon="people" scale="1.2" class="mr-2"></b-icon> Отзывы</h1>
 
             <div class="p-4 card-gradient-1 rounded">
             <b-row>

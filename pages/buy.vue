@@ -127,12 +127,21 @@
 </template>
 
 <script setup lang="ts">
+// import { omMounted } from 'vue'
 import DefaultLayout from '~/layout/DefaultLayout.vue'
+import { getData } from '~/services/DataService'
 
 function goShop(link: string) {
   window.location.href=link
 }
 
+import { onMounted } from 'vue';
+  onMounted(async () => {
+    // console.log('myheader mounted');
+    const { data } = await getData();
+    console.log(data);
+    // await console.log('getted');
+  })
 </script>
 
 <style lang="scss" scoped>

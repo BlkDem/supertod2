@@ -4,7 +4,7 @@
       <section name="versions">
         <div class="container">
           <div class="page">
-            <h1 class="text-left px-4"><b-icon icon="info-square" scale="1.2" class="mr-2"></b-icon> Supertod Супертод III</h1>
+            <h1 class="text-left px-4"><b-icon icon="bullseye" scale="1.2" class="mr-2"></b-icon> Supertod Супертод III</h1>
 
             <!-- block -->
 

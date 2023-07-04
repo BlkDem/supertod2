@@ -4,7 +4,7 @@
       <section name="gallery">
         <div class="container">
           <div class="page">
-            <h1 class="text-left px-4"><b-icon icon="info-square" scale="1.2" class="mr-2"></b-icon> Галерея</h1>
+            <h1 class="text-left px-4"><b-icon icon="images" scale="1.2" class="mr-2"></b-icon> Галерея</h1>
 
             <!-- block -->
 
