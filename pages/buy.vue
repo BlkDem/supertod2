@@ -10,6 +10,7 @@
         <b-row>
             <!-- <p class="lead text-center"></p> -->
             <!--standart-->
+
             <b-col xl="3" lg="6" xs="12" >
               <b-card class="price card-gradient">
                 <div class="card-head">
@@ -28,7 +29,7 @@
                   </ol>
                   <div class="buy-block">
                     <h2 class="text-center"> 4 900 ₽</h2>
-                    <b-button @click="goShop('https://umolab-devoces.com/mini')" block size="lg" bold>
+                    <b-button @click="goShop('https://umolab-devices.com/mini')" block size="lg" bold>
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
                     </b-button>
@@ -39,6 +40,7 @@
 
 
             <b-col  xl="3" lg="6"  xs="12" >
+
               <b-card class="price card-gradient">
                 <div class="card-head">
                   <h3 class="text-center">Версия LCD </h3>
@@ -51,18 +53,19 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Обновленная версия 3.7 </li>
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Устанавливается на место штатного "компаса" </li>
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Управляется штатными кнопками</li>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Упрощено программмирование</li>
+                    <!-- <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Упрощено программмирование</li> -->
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Регулируемая яркость</li>
                   </ol>
                   <div class="buy-block">
                     <h2 class="text-center">8 700 ₽</h2>
-                    <b-button @click="goShop('https://umolab-devoces.com/lcd')" block size="lg">
+                    <b-button @click="goShop('https://umolab-devices.com/lcd')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
                     </b-button>
                   </div>
                 </div>
               </b-card>
+
             </b-col>
 
             <b-col  xl="3" lg="6"  xs="12" >
@@ -81,7 +84,7 @@
                   </ol>
                   <div class="buy-block">
                     <h2 class="text-center">7 900 ₽</h2>
-                    <b-button @click="goShop('https://umolab-devoces.com/gm')" block size="lg">
+                    <b-button @click="goShop('https://umolab-devices.com/gm')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
                     </b-button>
@@ -106,7 +109,7 @@
                   </ol>
                   <div class="buy-block">
                     <h2 class="text-center">9 500 ₽</h2>
-                    <b-button @click="goShop('https://umolab-devoces.com/st3')" block size="lg">
+                    <b-button @click="goShop('https://umolab-devices.com/st')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
                     </b-button>
@@ -146,9 +149,14 @@ section {
   padding: 32px 0;
 }
 .buy-block {
-  padding: 4px 4px;
+  padding: 8px 8px;
   background-color: white;
-  border-radius: 4px;
+  border-radius: 8px;
+}
+
+.buy-block button {
+  font-weight: 700;
+
 }
 
 h1 {
@@ -178,17 +186,26 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
-  color: $yellow-active;
+  color: $yellow-inactive;
 }
 
 h3 {
   // padding-bottom: 8px;
-  padding-top: 4px;
+  // padding-top: 4px;
+  padding-top: 12px;
+    padding-bottom: 4px;
+    font-size: 1.3rem;
   font-size: 1.3rem;
 }
 
 ol {
   padding: 8px 8px;
+}
+
+.btn {
+  font-size: 1.5rem;
+  box-shadow: 2px 2px 4px black;
+  // width: 200px;
 }
 
 .body {

@@ -10,7 +10,7 @@
 
         <b-row class="py-4 version card-gradient-1">
           <b-col md="4">
-            <div class="media">
+            <div class="media ml-2">
               <div class="image-block">
                   <img class="img-verison" src="img/st3.jpg"></div>
             </div>
@@ -19,6 +19,13 @@
             <div>
               <h2>Супертод 3 Standart</h2>
               <p class="device-description">Выносной пульт управления с OLED дисплеем и вольтметром. </p>
+              <div class="body">
+                  <ol>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Выносной пульт управления </li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Яркий хорошо читаемый OLED дисплей</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Программируемые функции</li>
+                  </ol>
+                </div>
             </div>
             <div>
 
@@ -32,10 +39,10 @@
 
         <b-row class="row pt-4 pb-4 version card-gradient-2">
           <b-col md="4">
-            <div class="media">
+            <div class="media ml-2">
               <div class="image-block">
                       <img class="img-verison" src="img/item.jpg"></div>
-              <!--<div class="media-body">-->
+              <!--<div class="media ml-2-body">-->
 
               <!--</div>-->
             </div>
@@ -44,6 +51,15 @@
               <div>
                 <h2>Версия LCD на место штатного "компаса"</h2>
                 <p class="device-description">Устройство, гармонично вписывающееся в салон. Управляется кнопками штатного "компаса". </p>
+                <div class="body">
+                  <ol>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Обновленная версия 3.7 </li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Устанавливается на место штатного "компаса" </li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Управляется штатными кнопками</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Упрощено программмирование</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Регулируемая яркость</li>
+                  </ol>
+                </div>
               </div>
               <div>
                 <ModeList />
@@ -59,10 +75,10 @@
 
         <b-row class="pt-4 pb-4 version card-gradient-1">
           <b-col md="4">
-            <div class="media">
+            <div class="media ml-2">
               <div class="image-block">
                   <img class="img-verison" src="img/3.jpg"></div>
-              <!--<div class="media-body">-->
+              <!--<div class="media ml-2-body">-->
                 <!--Самая продвинутая, на сегодняшний момент, версия.  -->
                 <!--</p>-->
               <!--</div>-->
@@ -72,6 +88,13 @@
               <div>
                 <h2>Версия под селектор GM</h2>
                 <p class="device-description">Версия устройства, позволяющая заменить штатный селектор Sorento на селектор GM</p>
+                <div class="body">
+                  <ol>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Самая технологичная версия</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Максимальное удобство управления</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Качественный селектор</li>
+                  </ol>
+                  </div>
                 </div>
                 <div>
                   <ModeList />
@@ -89,10 +112,10 @@
         <b-row class="pt-4 pb-4 version card-gradient-2">
 
           <b-col md="4">
-            <div class="media">
+            <div class="media ml-2">
               <div class="image-block">
                   <img class="img-verison" src="img/mini.jpg"></div>
-              <!--<div class="media-body">-->
+              <!--<div class="media ml-2-body">-->
               <!--</div>-->
             </div>
           </b-col>
@@ -100,6 +123,14 @@
               <div>
                 <h2>Версия "мини"</h2>
                 <p class="device-description">Самая доступная, но полностью функциональная версия SuperTOD II / Супертод 2. </p>
+                <div class="body">
+                <ol>
+                  <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Самое доступное устройство</li>
+                  <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Полный функционал</li>
+                  <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Переключатель на три положения</li>
+                </ol>
+                </div>
+
                 </div>
                 <div>
                   <ModeList />
@@ -150,6 +181,14 @@ section {
   padding: 32px 0;
 }
 
+li {
+  list-style: none;
+}
+
+ol {
+  transform: skew(-10deg, 0deg);
+}
+
 h1 {
   margin-top: 24px;
   margin-bottom: 24px;
@@ -169,11 +208,13 @@ h2 {
   padding-bottom: 8px;
   padding-top: 4px;
   border-radius: 8px;
+  box-shadow: inset 0 0 4px $yellow-maxdark;
 }
 
 .device-description {
   color: $yellow-maxdark;
   // border-left: 4px solid;
+  text-align: center;
   padding-left: 8px;
 }
 

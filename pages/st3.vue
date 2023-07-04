@@ -11,14 +11,21 @@
         <b-row class="py-4 version card-gradient-1">
           <b-col md="4">
             <div class="media">
-              <div class="image-block">
+              <div class="image-block ml-2">
                   <img class="img-verison" src="img/st3.jpg"></div>
             </div>
           </b-col>
           <b-col md="8" class="pt-2 card-version">
-            <div>
+            <div class="mr-2">
               <h2>Новинка! SuperTOD III Standart</h2>
-              <p class="device-description">Усройство оснащено выносным пультом управления с OLED дисплеем и функцией вольтметра. </p>
+              <h4 class="mb-4 mx-2">Усройство оснащено выносным пультом управления с OLED дисплеем и функцией вольтметра. </h4>
+              <div class="body mb-4">
+                  <ol>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Выносной пульт управления </li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Яркий хорошо читаемый OLED дисплей</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Программируемые функции</li>
+                  </ol>
+                </div>
             </div>
             <div>
 
@@ -34,7 +41,7 @@
           <img src="https://i.ibb.co/gdGr9kS/phpthumb-ctx-web-w-1000-h-1000-zc-0-far-q-90-src-assets-gallery-4-29.jpg" />
         </div>
 
-              <div class="text-center">
+              <div class="text-left mx-4">
                 <b-button @click="goShop('https://umolab-devices.com/st')" class="btn btn-default">
                   Купить
                 </b-button>
@@ -103,6 +110,14 @@ h2 {
   padding-bottom: 8px;
   padding-top: 4px;
   border-radius: 8px;
+}
+
+ol {
+  transform: skew(-10deg, 0deg);
+}
+
+li {
+  list-style: none;
 }
 
 .device-description {

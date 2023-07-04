@@ -1,6 +1,6 @@
 <template>
   <!-- ***HEADER*** -->
-  <section class="presentation">
+  <section name="nav-buttons">
 
   <b-navbar toggleable="lg" type="dark" class="nav-gradient justify-content-center">
 
@@ -26,15 +26,16 @@
 
 <style lang="scss" scoped>
 
-a {
+li a {
   color: white;
   display: block;
   height: 64px;
   padding-top: 24px;
   text-align: center;
+  position: relative;
 }
 
-a:hover {
+li a:hover {
   text-decoration: none;
 }
 
@@ -99,6 +100,22 @@ li:hover {
 
 li:hover:before {
     background: #ccd97b;
+}
+
+@media (max-width: 500px) {
+  li {
+    width: 98vw;
+    height: 36px;
+    margin: 2px 0px;
+  }
+
+  li::before {
+    left: 12px;
+  }
+
+  li a {
+    margin-top: -32px;
+  }
 }
 
 </style>
