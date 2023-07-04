@@ -10,9 +10,10 @@
 
         <b-row class="py-4 version card-gradient-1">
           <b-col md="4">
-            <div class="media">
-              <div class="image-block ml-2">
-                  <img class="img-verison" src="img/st3.jpg"></div>
+            <div class="media h-100">
+              <!-- <div class="image-block ml-2">
+                  <img class="img-verison" src="img/st3.jpg">
+              </div> -->
             </div>
           </b-col>
           <b-col md="8" class="pt-2 card-version">
@@ -144,11 +145,36 @@ li {
 }
 
 .body a {
+  display: block;
   font-size: 1.2rem;
+  width: 100%;
+  height: 32px;
 }
 
 .contact {
   margin: 16px 16px;
+  background-color: #ffffff33;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.contact:hover {
+  background-color: #ffffff99;
+}
+
+.contact a:hover {
+  // color: green;
+}
+
+.media {
+  background: url(https://i.ibb.co/nDfq5TQ/HTB1r-AELVrrp-K1-Rj-SZTEq6-AWAVXah.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  mix-blend-mode: overlay;
+  opacity: 0.9;
+  margin-left: 8px;
+  box-shadow: inset 0 0 8px grey;
 }
 
 @media (max-width: 500px) {
