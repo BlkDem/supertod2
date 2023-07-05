@@ -13,7 +13,13 @@ import ButtonsBlock from '~/components/ButtonsBlock.vue'
 import FooterBlock from '~/components/FooterBlock.vue'
 
 function scrollToTop () {
-  window.scrollTo(0, 0);
+  const scrollStep = -window.scrollY / (1000 / 15)
+  const scrollInterval = setInterval(() => {
+    if ( window.scrollY != 0 ) {
+      window.scrollBy( 0, scrollStep );
+    }
+    else clearInterval(scrollInterval);
+    }, 15);
 }
 
 </script>
@@ -21,12 +27,11 @@ function scrollToTop () {
 <style lang="scss" scoped>
 
 .top {
-  // background: none;
   color: $yellow-active;
   cursor: pointer;
   position: absolute;
   right: 42px;
-  z-index: 101;
+  // z-index: 101;
 }
 
 footer {
