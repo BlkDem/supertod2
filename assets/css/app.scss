@@ -140,10 +140,12 @@ section {
 }
 
 .card-head {
-  background-color: $yellow-inactive;
+  color: #5e543b;
+  // background-color: $yellow-inactive;
   // box-shadow: inset 1px 1px 4px black;
   @include inset-shadow-4px;
   @include border-radius-4px;
+  background: linear-gradient(165deg, rgb(106, 111, 77) 0%, rgb(153, 159, 112) 10%, rgb(103 112 50) 50%, rgb(148 154 112) 90%, rgb(106, 111, 77) 100%);
 }
 .card-body {
   padding: 0.51rem;
@@ -152,4 +154,23 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
 }

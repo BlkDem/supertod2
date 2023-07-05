@@ -170,6 +170,10 @@ section {
 
 .main-img{
   width: 100%;
+  margin-bottom: 32px;
+  margin-left: 8px;
+  box-shadow: inset 1px 1px 2px $yellow-maxdark;
+  border-radius: 8px;
 }
 .img-responsive {
   width:100%;

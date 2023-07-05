@@ -194,6 +194,7 @@ h3 {
     padding-bottom: 4px;
     font-size: 1.3rem;
   font-size: 1.3rem;
+  mix-blend-mode: plus-lighter;
 }
 
 ol {
@@ -231,4 +232,6 @@ ol {
 .card {
   @include border-radius-4px;
 }
+
+
 </style>

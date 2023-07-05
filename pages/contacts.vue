@@ -78,27 +78,6 @@ section {
   padding: 32px 0;
 }
 
-h1 {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  padding-bottom: 12px;
-  padding-top: 8px;
-  // border: 2px solid $yellow-inactive;
-
-  background-color: $yellow-inactive;
-  box-shadow: inset 0 0 8px grey;
-  @include border-radius-4px;
-}
-
-h2 {
-  background-color: white;
-  color: $yellow-dark;
-  text-align: center;
-  padding-bottom: 8px;
-  padding-top: 4px;
-  border-radius: 8px;
-}
-
 ol {
   transform: skew(-10deg, 0deg);
 }
@@ -148,15 +127,16 @@ li {
   display: block;
   font-size: 1.2rem;
   width: 100%;
-  height: 32px;
+  height: 48px;
+  /* margin-top: -8px;*/
 }
 
 .contact {
-  margin: 16px 16px;
-  background-color: #ffffff33;
-  padding: 12px;
-  border-radius: 8px;
-}
+  margin: 16px 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* padding: 12px; */
+  padding-top: 16px;
+  border-radius: 8px;}
 
 .contact:hover {
   background-color: #ffffff99;

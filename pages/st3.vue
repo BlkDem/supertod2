@@ -11,12 +11,13 @@
         <b-row class="py-4 version card-gradient-1">
           <b-col md="4">
             <div class="media">
-              <div class="image-block ml-2">
-                  <img class="img-verison" src="/img/st3.jpg"></div>
+              <!-- <div class="image-block ml-2 mt-4">
+                  <img class="img-verison" src="/img/st3_400.jpg">
+              </div> -->
             </div>
           </b-col>
-          <b-col md="8" class="pt-2 card-version">
-            <div class="mr-2">
+          <b-col md="8" class="card-version">
+            <div class="">
               <h2>Новинка! SuperTOD III Standart</h2>
               <h4 class="mb-4 mx-2">Усройство оснащено выносным пультом управления с OLED дисплеем и функцией вольтметра. </h4>
               <div class="body mb-4">
@@ -91,27 +92,6 @@ section {
   padding: 32px 0;
 }
 
-h1 {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  padding-bottom: 12px;
-  padding-top: 8px;
-  // border: 2px solid $yellow-inactive;
-
-  background-color: $yellow-inactive;
-  box-shadow: inset 0 0 8px grey;
-  @include border-radius-4px;
-}
-
-h2 {
-  background-color: white;
-  color: $yellow-dark;
-  text-align: center;
-  padding-bottom: 8px;
-  padding-top: 4px;
-  border-radius: 8px;
-}
-
 ol {
   transform: skew(-10deg, 0deg);
 }
@@ -127,6 +107,19 @@ li {
   text-shadow: 0 0 4px $yellow-maxdark;
   // border-left: 4px solid;
   padding-left: 8px;
+}
+
+.media {
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  background: url(/img/st3_400.jpg);
+  background-size: 200%;
+  padding-left: 16px;
+  border-radius: 8px;
+  margin-left: 8px;
+  box-shadow: inset 1px 1px 2px $yellow-maxdark;
+  // filter: blur(4px);
 }
 
 .st3-images {
@@ -179,6 +172,10 @@ li {
   }
   .btn {
     width: 100%;
+  }
+
+  .st3-images img {
+    width: 90vw;
   }
 }
 
