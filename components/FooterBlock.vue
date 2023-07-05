@@ -1,10 +1,34 @@
 <template>
   <footer class="nav-gradient w-100 text-center footer">
     Umolab &copy; 2023
+    <div class="top">
+    <b-icon icon="arrow-up-circle" scale="2" @click="scrollToTop"></b-icon>
+    </div>
   </footer>
 </template>
 
+<script setup lang="ts">
+import HeaderBlock from '~/components/HeaderBlock.vue'
+import ButtonsBlock from '~/components/ButtonsBlock.vue'
+import FooterBlock from '~/components/FooterBlock.vue'
+
+function scrollToTop () {
+  window.scrollTo(0, 0);
+}
+
+</script>
+
 <style lang="scss" scoped>
+
+.top {
+  // background: none;
+  color: $yellow-active;
+  cursor: pointer;
+  position: absolute;
+  right: 42px;
+  z-index: 101;
+}
+
 footer {
   display: flex;
   height: 64px;

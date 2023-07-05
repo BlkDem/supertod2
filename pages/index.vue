@@ -152,8 +152,13 @@
           </div>
         </div>
       </section>
+
+    </template>
+    <template v-slot:footer>
+      <div class="w-100 text-center" @click="scrollToTop">To Top</div>
     </template>
   </DefaultLayout>
+
 </template>
 
 <script setup lang="ts">
@@ -166,6 +171,10 @@ const c_name: string = 'my string'
 
 function goShop(link: string) {
   window.location.href = link;
+}
+
+function scrollToTop () {
+  window.scrollTo(0, 0);
 }
 
 </script>
