@@ -161,6 +161,7 @@ section {
 .price-cost {
   font-size: 2.5rem;
   background-color: $yellow-active;
+  color: #646331;
 }
 
 .buy-block {

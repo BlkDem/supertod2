@@ -175,10 +175,19 @@ section {
   box-shadow: inset 1px 1px 2px $yellow-maxdark;
   border-radius: 8px;
 }
+
 .img-responsive {
   width:100%;
   mix-blend-mode: overlay;
   border-radius: 8px;
+}
+
+.btn-secondary {
+  filter: drop-shadow(2px 2px 2px black);
+}
+
+.btn-secondary:focus {
+  border: 0;
 }
 
 .row {

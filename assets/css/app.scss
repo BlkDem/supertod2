@@ -51,16 +51,26 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   background-color: white;
-  color: $yellow-dark;
+  color: #d5ce5e;
   text-align: center;
-  padding-bottom: 8px;
-  padding-top: 4px;
+  padding-bottom: 12px;
+  padding-top: 8px;
   border-radius: 8px;
-  box-shadow: inset 1px 1px 2px $yellow-maxdark;
+  box-shadow: inset 1px 1px 2px #292005;
+  background: linear-gradient(165deg, #6a6f4d, #999f70 10%, #677032 50%, #949a70 90%, #6a6f4d);
+  // mix-blend-mode: hard-light;
+  // text-transform: uppercase;
 }
 
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
 // h1 {
 //   font-size: 2rem;
   // background: rgb(242,242,242);
