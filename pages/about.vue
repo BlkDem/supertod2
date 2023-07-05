@@ -12,7 +12,7 @@
 
             <b-col md="4">
               <div class="main-img">
-                <img src="img/llogo.jpg" class="img-responsive">
+                <img src="/img/llogo.jpg" class="img-responsive">
               </div>
             </b-col>
 

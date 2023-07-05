@@ -12,7 +12,7 @@
           <b-col md="4">
             <div class="media">
               <div class="image-block ml-2">
-                  <img class="img-verison" src="img/st3.jpg"></div>
+                  <img class="img-verison" src="/img/st3.jpg"></div>
             </div>
           </b-col>
           <b-col md="8" class="pt-2 card-version">
