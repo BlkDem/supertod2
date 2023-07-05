@@ -193,28 +193,6 @@ ol {
   transform: skew(-10deg, 0deg);
 }
 
-h1 {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  padding-bottom: 12px;
-  padding-top: 8px;
-  // border: 2px solid $yellow-inactive;
-
-  background-color: $yellow-inactive;
-  box-shadow: inset 0 0 8px grey;
-  @include border-radius-4px;
-}
-
-h2 {
-  background-color: white;
-  color: $yellow-dark;
-  text-align: center;
-  padding-bottom: 8px;
-  padding-top: 4px;
-  border-radius: 8px;
-  box-shadow: inset 0 0 4px $yellow-maxdark;
-}
-
 .device-description {
   color: $yellow-maxdark;
   // border-left: 4px solid;
@@ -279,21 +257,5 @@ h2 {
     margin-bottom: 16px;
     margin-left: 0;
   }
-}
-
-.card-gradient-1 {
-    background: rgb(217,210,199);
-    background: -moz-linear-gradient(45deg, rgba(217,210,199,1) 0%, rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(217,210,199,1) 0%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(45deg, rgb(128 128 128) 0%, rgb(194 190 190 / 48%) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9d2c7",endColorstr="#ffffff",GradientType=1);
-}
-
-.card-gradient-2 {
-    background: rgb(175,208,207);
-    background: -moz-linear-gradient(45deg, rgba(175,208,207,1) 0%, rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(175,208,207,1) 0%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(45deg, rgb(128 128 128 / 63%) 0%, rgb(194 190 190 / 88%) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#afd0cf",endColorstr="#ffffff",GradientType=1);
 }
 </style>

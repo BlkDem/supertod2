@@ -8,7 +8,7 @@
             <h1 class="text-left px-4"><b-icon icon="info-square" scale="1.2" class="mr-2"></b-icon> О SuperTOD</h1>
             <!-- about -->
 
-            <b-row>
+            <b-row class="py-4 version card-gradient-2 rounded">
 
             <b-col md="4">
               <div class="main-img">
@@ -19,14 +19,14 @@
             <b-col md="8" xs="12">
                <div>
                <h2>Устройства Umolab Group (BlkDem)</h2>
-               <p>SuperTOD II, или Супертод 2/3, устройство, предназначенное для ручного управления раздаточной коробкой автомобилей KIA Sorento BL 2002-2009, 2011 годов выпуска и других автомобилей,
-               оснащенных совместимой трансмиссией. </p>
+               <div class="m-4">SuperTOD II, или Супертод 2/3, устройство, предназначенное для ручного управления раздаточной коробкой автомобилей KIA Sorento BL 2002-2009, 2011 годов выпуска и других автомобилей,
+               оснащенных совместимой трансмиссией. </div>
                </div>
               <div class="text-center">
                 <b-button v-b-toggle.collapse-1 class="w-50">Подробнее...</b-button>
               </div>
               <b-collapse id="collapse-1" class="mt-2">
-                <b-card>
+                <b-card class="p-2 m-2">
                   <p>
                     Устройство под селектор GM испытано и устанавливается <a href="https://www.youtube.com/watch?v=axon2CZBq1g" target=_blank> на автомобиль H-1 Grand Starex</a>.
                      Респект Илье <a href="https://www.youtube.com/channel/UCEcIj7tixjBa1t2lfLPB_oQ/channels" target=_blank>Sedov Auto Maker</a>!
@@ -173,7 +173,7 @@ section {
 }
 .img-responsive {
   width:100%;
-  mix-blend-mode: difference;
+  mix-blend-mode: overlay;
   border-radius: 8px;
 }
 

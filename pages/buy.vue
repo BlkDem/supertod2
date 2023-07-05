@@ -28,7 +28,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Переключатель на три положения</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center price-cost"> 4 900 ₽</h2>
+                    <h2 class="text-center price-cost price_gradient"> 4 900 ₽</h2>
                     <b-button @click="goShop('https://umolab-devices.com/mini')" block size="lg" bold>
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -57,7 +57,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Регулируемая яркость</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center price-cost">8 700 ₽</h2>
+                    <h2 class="text-center price-cost price_gradient">8 700 ₽</h2>
                     <b-button @click="goShop('https://umolab-devices.com/lcd')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -83,7 +83,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Качественный селектор</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center price-cost">7 900 ₽</h2>
+                    <h2 class="text-center price-cost price_gradient">7 900 ₽</h2>
                     <b-button @click="goShop('https://umolab-devices.com/gm')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -108,7 +108,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Программируемые функции</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center price-cost">9 500 ₽</h2>
+                    <h2 class="text-center price-cost price_gradient">9 500 ₽</h2>
                     <b-button @click="goShop('https://umolab-devices.com/st')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -160,7 +160,7 @@ section {
 
 .price-cost {
   font-size: 2.5rem;
-
+  background-color: $yellow-active;
 }
 
 .buy-block {
@@ -220,6 +220,7 @@ ol {
 .image {
   padding: 16px 4px;
 }
+
 .image img {
   width: 100%;
   height: auto;
