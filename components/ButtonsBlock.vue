@@ -13,6 +13,7 @@
         <li class="nav-item"><a class="nav-link!" href="/st3">ST-III</a></li>
         <!-- <li class="nav-item"><a class="nav-link!" href="/pluses">Плюсы</a></li> -->
         <li class="nav-item"><a class="nav-link!" href="/gallery">Галерея</a></li>
+        <li class="nav-item"><a class="nav-link!" href="/video">Видео</a></li>
         <li class="nav-item"><a class="nav-link!" href="/reviews">Отзывы</a></li>
         <li class="nav-item"><a class="nav-link!" href="/buy">Купить</a></li>
         <li class="nav-item"><a class="nav-link!" href="/contacts">Контакты</a></li>

@@ -1,5 +1,5 @@
 <template>
-  <DefaultLayout v-once>
+  <DefaultLayout>
     <template v-slot:main>
       <section name="versions">
         <div class="container">

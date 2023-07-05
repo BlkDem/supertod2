@@ -3,7 +3,7 @@
 }
 
 @mixin inset-shadow-4px {
-  box-shadow: inset 0 0 4px black;
+  box-shadow: inset 1px 1px 4px black;
 }
 
 html, body {
@@ -37,6 +37,31 @@ a:hover {
 
 h1 {
   font-size: 2rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  padding-top: 8px;
+  // border: 2px solid $yellow-inactive;
+
+  background-color: #6a6f4d;
+  box-shadow: inset 0 0 8px grey;
+  @include border-radius-4px;
+
+  background: linear-gradient(0deg, rgba(242,242,242,0) 0%, rgb(76 74 75) 4%, rgb(88 87 86) 49%, rgb(71 70 70) 96%, rgba(255,255,255,0) 100%);
+}
+
+h2 {
+  font-size: 1.8rem;
+  background-color: white;
+  color: $yellow-dark;
+  text-align: center;
+  padding-bottom: 8px;
+  padding-top: 4px;
+  border-radius: 8px;
+}
+
+// h1 {
+//   font-size: 2rem;
   // background: rgb(242,242,242);
   // background: -moz-linear-gradient(0deg, rgba(242,242,242,1) 0%, rgba(231,231,231,1) 4%, rgba(104,143,141,1) 8%, rgba(104,143,141,1) 92%, rgba(231,231,231,1) 96%, rgba(104,143,141,1) 100%);
   // background: -webkit-linear-gradient(0deg, rgba(242,242,242,1) 0%, rgba(231,231,231,1) 4%, rgba(104,143,141,1) 8%, rgba(104,143,141,1) 92%, rgba(231,231,231,1) 96%, rgba(104,143,141,1) 100%);
@@ -49,11 +74,11 @@ h1 {
   // background: -webkit-linear-gradient(0deg, rgba(242,242,242,0) 0%, rgba(104,143,141,1) 4%, rgba(255,255,255,1) 49%, rgba(104,143,141,1) 96%, rgba(255,255,255,0) 100%);
   /* background: linear-gradient(0deg, rgba(242,242,242,0) 0%, rgba(104,143,141,1) 4%, rgba(255,255,255,1) 49%, rgba(104,143,141,1) 96%, rgba(255,255,255,0) 100%); */
   /* background: linear-gradient(0deg, rgba(242,242,242,0) 0%, rgb(76 74 75) 4%, rgb(203 202 200) 49%, rgb(71 70 70) 96%, rgba(255,255,255,0) 100%); */
-  background: linear-gradient(0deg, rgba(242,242,242,0) 0%, rgb(76 74 75) 4%, rgb(88 87 86) 49%, rgb(71 70 70) 96%, rgba(255,255,255,0) 100%);
+  // background: linear-gradient(0deg, rgba(242,242,242,0) 0%, rgb(76 74 75) 4%, rgb(88 87 86) 49%, rgb(71 70 70) 96%, rgba(255,255,255,0) 100%);
   // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f2f2",endColorstr="#ffffff",GradientType=1);
   // padding-bottom: 32px;
 
-}
+// }
 
 section {
   // background: #2f3f4e url(/bg/set-tekstura-shariki.jpg) right;
@@ -91,7 +116,7 @@ section {
 
 .card-head {
   background-color: $yellow-inactive;
-  // box-shadow: inset 0 0 4px black;
+  // box-shadow: inset 1px 1px 4px black;
   @include inset-shadow-4px;
   @include border-radius-4px;
 }

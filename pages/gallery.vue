@@ -1,5 +1,5 @@
 <template>
-  <DefaultLayout v-once>
+  <DefaultLayout>
     <template v-slot:main>
       <section name="gallery">
         <div class="container">
@@ -8,7 +8,7 @@
 
             <!-- block -->
 
-        <div class="py-4 version card-gradient-1">
+        <div class="py-4 version card-gradient-1 rounded">
           <div md="8" class="pt-2 card-version">
             <div class="m-4">
               <h2>Версии</h2>
@@ -154,6 +154,9 @@ li {
 @media (max-width: 500px) {
   .btn {
     width: 100%;
+  }
+  .gallery-images img {
+    width: 90vw;
   }
 }
 

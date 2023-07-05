@@ -1,5 +1,5 @@
 <template>
-  <DefaultLayout v-once>
+  <DefaultLayout>
     <template v-slot:main>
       <section name="versions">
         <div class="container">
@@ -10,9 +10,10 @@
 
         <b-row class="py-4 version card-gradient-1">
           <b-col md="4">
-            <div class="media ml-2">
-              <div class="image-block">
-                  <img class="img-verison" src="img/st3.jpg"></div>
+            <div class="media">
+              <div class="image-block" style="background-image: url(/img/st3_400.jpg)">
+                  <!-- <img class="img-verison" src="img/st3.jpg"> -->
+              </div>
             </div>
           </b-col>
           <b-col md="8" class="pt-2 card-version">
@@ -39,9 +40,10 @@
 
         <b-row class="row pt-4 pb-4 version card-gradient-2">
           <b-col md="4">
-            <div class="media ml-2">
-              <div class="image-block">
-                      <img class="img-verison" src="img/item.jpg"></div>
+            <div class="media">
+              <div class="image-block" style="background-image: url(/img/item.jpg)">
+                      <!-- <img class="img-verison" src="img/item.jpg"> -->
+              </div>
               <!--<div class="media ml-2-body">-->
 
               <!--</div>-->
@@ -75,9 +77,10 @@
 
         <b-row class="pt-4 pb-4 version card-gradient-1">
           <b-col md="4">
-            <div class="media ml-2">
-              <div class="image-block">
-                  <img class="img-verison" src="img/3.jpg"></div>
+            <div class="media">
+              <div class="image-block" style="background-image: url(/img/3.jpg); background-position='right'">
+                  <!-- <img class="img-verison" src="img/3.jpg"> -->
+              </div>
               <!--<div class="media ml-2-body">-->
                 <!--Самая продвинутая, на сегодняшний момент, версия.  -->
                 <!--</p>-->
@@ -112,9 +115,10 @@
         <b-row class="pt-4 pb-4 version card-gradient-2">
 
           <b-col md="4">
-            <div class="media ml-2">
-              <div class="image-block">
-                  <img class="img-verison" src="img/mini.jpg"></div>
+            <div class="media">
+              <div class="image-block" style="background-image: url(/img/mini.jpg)">
+                  <!-- <img class="img-verison" src="img/mini.jpg"> -->
+              </div>
               <!--<div class="media ml-2-body">-->
               <!--</div>-->
             </div>
@@ -229,11 +233,29 @@ h2 {
 }
 
 .image-block {
-  padding: 4px;
-  box-shadow: inset 0 0 16px $yellow-inactive;
-  padding: 8px;
-  border-radius: 12px;
+  //
+  // padding: 4px;
+  // box-shadow: inset 0 0 16px $yellow-inactive;
+  // padding: 8px;
+  // border-radius: 12px;
+  //
+
+
+  box-shadow: inset 0 0 16px #6a6f4d;
+    // padding: 8px;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    background: url(/img/st3.jpg);
+    background-position: inherit;
+    background-size: 120%;
 }
+
+.media {
+  height: 100%;
+  margin-left: 8px;
+}
+
 .btn {
   font-size: 1.5rem;
   box-shadow: 2px 2px 4px black;
@@ -250,6 +272,12 @@ h2 {
   }
   .btn {
     width: 100%;
+  }
+
+  .media {
+    height: 300px;
+    margin-bottom: 16px;
+    margin-left: 0;
   }
 }
 

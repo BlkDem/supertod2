@@ -28,7 +28,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Переключатель на три положения</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center"> 4 900 ₽</h2>
+                    <h2 class="text-center price-cost"> 4 900 ₽</h2>
                     <b-button @click="goShop('https://umolab-devices.com/mini')" block size="lg" bold>
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -57,7 +57,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Регулируемая яркость</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center">8 700 ₽</h2>
+                    <h2 class="text-center price-cost">8 700 ₽</h2>
                     <b-button @click="goShop('https://umolab-devices.com/lcd')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -83,7 +83,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Качественный селектор</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center">7 900 ₽</h2>
+                    <h2 class="text-center price-cost">7 900 ₽</h2>
                     <b-button @click="goShop('https://umolab-devices.com/gm')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -108,7 +108,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Программируемые функции</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center">9 500 ₽</h2>
+                    <h2 class="text-center price-cost">9 500 ₽</h2>
                     <b-button @click="goShop('https://umolab-devices.com/st')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -157,6 +157,12 @@ import { onMounted } from 'vue';
 section {
   padding: 32px 0;
 }
+
+.price-cost {
+  font-size: 2.5rem;
+
+}
+
 .buy-block {
   padding: 8px 8px;
   background-color: white;
@@ -166,18 +172,6 @@ section {
 .buy-block button {
   font-weight: 700;
 
-}
-
-h1 {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  padding-bottom: 12px;
-  padding-top: 8px;
-  // border: 2px solid $yellow-inactive;
-
-  background-color: #6a6f4d;
-  box-shadow: inset 0 0 8px grey;
-  @include border-radius-4px;
 }
 
 .h1-selected {
@@ -191,11 +185,6 @@ h1 {
   margin-left: 25px;
   @include inset-shadow-4px;
   @include border-radius-4px;
-}
-
-h2 {
-  font-size: 2.5rem;
-  color: $yellow-inactive;
 }
 
 h3 {
