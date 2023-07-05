@@ -1,6 +1,10 @@
 <template>
   <DefaultLayout>
     <template v-slot:main>
+
+      <SectionBuy />
+      <SectionAbout />
+
       <section name="versions">
         <div class="container">
           <div class="page">
@@ -152,6 +156,15 @@
           </div>
         </div>
       </section>
+
+
+      <SectionStandart />
+      <SectionGallery />
+      <SectionVideo />
+      <SectionReviews />
+
+      <SectionContacts />
+
     </template>
   </DefaultLayout>
 </template>
@@ -161,6 +174,13 @@
 
 import DefaultLayout from '~/layout/DefaultLayout.vue'
 import ModeList from '~/components/ModeList.vue'
+import SectionAbout from '~/components/sections/SectionAbout.vue';
+import SectionContacts from '~/components/sections/SectionContacts.vue';
+import SectionGallery from '~/components/sections/SectionGallery.vue';
+import SectionVideo from '~/components/sections/SectionVideo.vue';
+import SectionStandart from '~/components/sections/SectionStandart.vue';
+import SectionReviews from '~/components/sections/SectionReviews.vue';
+import SectionBuy from '~/components/sections/SectionBuy.vue';
 
 const c_name: string = 'my string'
 

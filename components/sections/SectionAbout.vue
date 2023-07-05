@@ -1,7 +1,4 @@
 <template>
-
-  <!-- <DefaultLayout>
-    <template v-slot:main> -->
       <section name="about">
         <div class="container">
           <div class="page">
@@ -143,8 +140,7 @@
           </div>
         </div>
       </section>
-    <!-- </template>
-  </DefaultLayout> -->
+
 </template>
 
 <script setup lang="ts">
