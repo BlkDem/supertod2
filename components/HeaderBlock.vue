@@ -7,7 +7,7 @@
         <b-col md="6" offset-lg="6" class="logo-panel">
 
           <div class="mb-4">
-            <img src="img/logo2.png" class="logo" />
+            <img src="/img/logo2.png" class="logo" />
           </div>
           <ul class="check-list list-unstyled logo-ul">
             <li><b-icon icon="check-square" scale="1"></b-icon>
