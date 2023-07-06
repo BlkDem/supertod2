@@ -154,9 +154,6 @@
       </section>
 
     </template>
-    <template v-slot:footer>
-      <div class="w-100 text-center" @click="scrollToTop">To Top</div>
-    </template>
   </DefaultLayout>
 
 </template>

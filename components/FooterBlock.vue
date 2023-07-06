@@ -2,7 +2,7 @@
   <footer class="nav-gradient w-100 text-center footer">
     Umolab &copy; 2023
     <div class="top">
-    <b-icon icon="arrow-up-circle" scale="2" @click="scrollToTop"></b-icon>
+      <b-icon icon="arrow-up-circle" scale="2" @click="scrollToTop"></b-icon>
     </div>
   </footer>
 </template>
@@ -15,8 +15,8 @@ import FooterBlock from '~/components/FooterBlock.vue'
 function scrollToTop () {
   const scrollStep = -window.scrollY / (1000 / 15)
   const scrollInterval = setInterval(() => {
-    if ( window.scrollY != 0 ) {
-      window.scrollBy( 0, scrollStep );
+    if (window.scrollY != 0) {
+      window.scrollBy(0, scrollStep);
     }
     else clearInterval(scrollInterval);
     }, 15);
