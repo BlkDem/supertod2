@@ -24,9 +24,14 @@ export default {
       { rel: 'apple-touch-icon', type: 'image/x-icon', href: '/apple-icon-152x152.png', size: '152x152' },
       { rel: 'apple-touch-icon', type: 'image/x-icon', href: '/apple-icon-180x180.png', size: '180x180' },
       { rel: 'icon', type: 'image/png', href: '/android-icon-192x192.png', size: '192x192' },
-      { rel: 'icon', type: 'image/png', href: '/android-icon-32x32.png', size: '32x32' },
+      { rel: 'icon', type: 'image/png', href: '/android-icon-144x144.png', size: '144x144' },
       { rel: 'icon', type: 'image/png', href: '/android-icon-96x96.png', size: '96x96' },
-      { rel: 'icon', type: 'image/png', href: '/android-icon-16x16.png', size: '16x16' },
+      { rel: 'icon', type: 'image/png', href: '/android-icon-72x72.png', size: '72x72' },
+      { rel: 'icon', type: 'image/png', href: '/android-icon-48x48.png', size: '48x48' },
+      { rel: 'icon', type: 'image/png', href: '/ms-icon-70x70.png', size: '70x70' },
+      { rel: 'icon', type: 'image/png', href: '/ms-icon-144x144.png', size: '144x144' },
+      { rel: 'icon', type: 'image/png', href: '/ms-icon-150x150.png', size: '150x150' },
+      { rel: 'icon', type: 'image/png', href: '/ms-icon-310x310.png', size: '310x310' },
       { rel: 'manifest', href: '/manifest.json'},
 
     ]
@@ -63,7 +68,16 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/robots',
+    '@nuxtjs/proxy',
   ],
+
+  axios: {
+    proxy: true
+  },
+
+  proxy: {
+    '/api/': { target: 'https://iotman.blkdem.ru/', pathRewrite: {'^/api/': ''}, changeOrigin: true }
+  },
 
   bootstrapVue: {
     icons: true

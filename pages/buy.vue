@@ -98,7 +98,7 @@
                 <div class="card-head">
                   <h3 class="text-center">ST-3 Standart</h3>
                 </div>
-                <div class="image">
+                <div class="image" style="margin-bottom: 10px;">
                   <img src="https://i.ibb.co/FX9h3R5/phpthumb-ctx-web-w-1000-h-1000-zc-0-far-q-90-src-assets-gallery-4-29.jpg" alt="">
                 </div>
                 <div class="body">
@@ -137,10 +137,8 @@ function goShop(link: string) {
 
 import { onMounted } from 'vue';
   onMounted(async () => {
-    // console.log('myheader mounted');
-    const { data } = await getData();
-    console.log(data);
-    // await console.log('getted');
+    const response = await getData();
+    console.log(response?.data);
   })
 </script>
 
@@ -228,13 +226,12 @@ ol {
 
 .image img {
   width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: inset 2px 2px 8px #333;
-    padding: 2px;
-    margin-top: 8px;
-    // @include border-radius-4px;
-  // padding: 8px 0px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: inset 8px 8px 8px #333;
+  padding: 2px;
+  margin-top: 8px;
+  background-color: #555;
 }
 
 .card {

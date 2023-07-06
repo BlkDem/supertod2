@@ -10,7 +10,7 @@
 
         <b-row class="py-4 version card-gradient-1">
           <b-col md="4">
-            <div class="media">
+            <div class="media mt-0">
               <div class="image-block" style="background-image: url(/img/st3_400.jpg)">
                   <!-- <img class="img-verison" src="img/st3.jpg"> -->
               </div>
@@ -61,7 +61,7 @@
               </b-button>
           </b-col>
           <b-col md="4">
-            <div class="media mr-2">
+            <div class="media mb-0">
               <div class="image-block" style="background-image: url(/img/item.jpg)">
                       <!-- <img class="img-verison" src="img/item.jpg"> -->
               </div>
@@ -78,7 +78,7 @@
 
         <b-row class="pt-4 pb-4 version card-gradient-1">
           <b-col md="4">
-            <div class="media">
+            <div class="media  mt-0">
               <div class="image-block" style="background-image: url(/img/3.jpg); background-position='right'">
                   <!-- <img class="img-verison" src="img/3.jpg"> -->
               </div>
@@ -137,7 +137,7 @@
                 </b-button>
           </b-col>
           <b-col md="4">
-            <div class="media mr-2">
+            <div class="media mb-0">
               <div class="image-block" style="background-image: url(/img/mini.jpg)">
                   <!-- <img class="img-verison" src="img/mini.jpg"> -->
               </div>
@@ -263,6 +263,7 @@ ol {
   .media {
     height: 300px;
     margin-bottom: 16px;
+    margin-top: 16px;
     margin-left: 0;
   }
 }
