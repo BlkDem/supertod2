@@ -58,7 +58,7 @@ li {
 
 .presentation {
   background: #3e3e3e url(/img/bg3.jpg) right no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   color: white;
   text-shadow: 0 1px 0 rgba(0,0,0,0.3);
   height: 400px;
