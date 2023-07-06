@@ -19,7 +19,7 @@
           <b-col md="8" class="pt-2 card-version">
             <div>
               <h2>Супертод 3 Standart</h2>
-              <p class="device-description">Выносной пульт управления с OLED дисплеем и вольтметром. </p>
+              <h4 class="mb-4 mx-2">Выносной пульт управления с OLED дисплеем и вольтметром. </h4>
               <div class="body">
                   <ol>
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Выносной пульт управления </li>
@@ -42,7 +42,7 @@
           <b-col md="8" class="pt-2 card-version">
               <div>
                 <h2>Версия LCD на место штатного "компаса"</h2>
-                <p class="device-description">Устройство, гармонично вписывающееся в салон. Управляется кнопками штатного "компаса". </p>
+                <h4 class="mb-4 mx-2">Устройство, гармонично вписывающееся в салон. Управляется кнопками штатного "компаса". </h4>
                 <div class="body">
                   <ol>
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Обновленная версия 3.7 </li>
@@ -91,7 +91,7 @@
           <b-col md="8" class="pt-2 card-version">
               <div>
                 <h2>Версия под селектор GM</h2>
-                <p class="device-description">Версия устройства, позволяющая заменить штатный селектор Sorento на селектор GM</p>
+                <h4 class="mb-4 mx-2">Версия устройства, позволяющая заменить штатный селектор Sorento на селектор GM</h4>
                 <div class="body">
                   <ol>
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Самая технологичная версия</li>
@@ -118,7 +118,7 @@
           <b-col md="8" class="pt-2 card-version">
               <div>
                 <h2>Версия "мини"</h2>
-                <p class="device-description">Самая доступная, но полностью функциональная версия SuperTOD II / Супертод 2. </p>
+                <h4 class="mb-4 mx-2">Самая доступная, но полностью функциональная версия SuperTOD II / Супертод 2. </h4>
                 <div class="body">
                 <ol>
                   <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Самое доступное устройство</li>

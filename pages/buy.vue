@@ -218,15 +218,22 @@ ol {
   list-style: none;
 }
 
-
+.price {
+  border-radius: .5rem;
+}
 .image {
-  padding: 16px 4px;
+  // padding: 16px 4px;
+  border-radius: 4px;
 }
 
 .image img {
   width: 100%;
-  height: auto;
-  @include border-radius-4px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 8px #333;
+    padding: 2px;
+    margin-top: 8px;
+    // @include border-radius-4px;
   // padding: 8px 0px;
 }
 
