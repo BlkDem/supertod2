@@ -233,8 +233,8 @@ ol {
     width: 100%;
     height: 100%;
     background: url(/img/st3.jpg);
-    background-position: inherit;
-    background-size: 120%;
+    background-position: center;
+    background-size: cover;
 }
 
 .media {

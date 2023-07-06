@@ -114,7 +114,8 @@ li {
   height: 100%;
   align-items: flex-start;
   background: url(/img/st3_400.jpg);
-  background-size: 200%;
+  background-size: cover;
+  background-position: left;
   padding-left: 16px;
   border-radius: 8px;
   margin-left: 8px;
