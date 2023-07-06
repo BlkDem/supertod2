@@ -23,7 +23,7 @@
                оснащенных совместимой трансмиссией. </div>
                </div>
               <div class="text-center">
-                <b-button v-b-toggle.collapse-1 class="w-50">Подробнее...</b-button>
+                <b-button v-b-toggle.collapse-1 class="btn btn-secondary btn-sm w-100">Подробнее...</b-button>
               </div>
               <b-collapse id="collapse-1" class="mt-2">
                 <b-card class="p-2 m-2">

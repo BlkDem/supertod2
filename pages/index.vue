@@ -4,7 +4,7 @@
       <section name="versions">
         <div class="container">
           <div class="page">
-            <h1 class="text-left px-4"><b-icon icon="award" scale="1.2" class="mr-2"></b-icon> Выбери свой супертод!</h1>
+            <h1 class="text-left px-4"><b-icon icon="award" scale="1.2" class="mr-2"></b-icon> Выбери свой Супертод!</h1>
 
             <!-- block -->
 
@@ -39,16 +39,6 @@
 
 
         <b-row class="row pt-4 pb-4 version card-gradient-2">
-          <b-col md="4">
-            <div class="media">
-              <div class="image-block" style="background-image: url(/img/item.jpg)">
-                      <!-- <img class="img-verison" src="img/item.jpg"> -->
-              </div>
-              <!--<div class="media ml-2-body">-->
-
-              <!--</div>-->
-            </div>
-          </b-col>
           <b-col md="8" class="pt-2 card-version">
               <div>
                 <h2>Версия LCD на место штатного "компаса"</h2>
@@ -69,7 +59,18 @@
               <b-button @click="goShop('https://umolab-devices.com/lcd')" class="btn btn-default">
                   Купить
               </b-button>
-              </b-col>
+          </b-col>
+          <b-col md="4">
+            <div class="media mr-2">
+              <div class="image-block" style="background-image: url(/img/item.jpg)">
+                      <!-- <img class="img-verison" src="img/item.jpg"> -->
+              </div>
+              <!--<div class="media ml-2-body">-->
+
+              <!--</div>-->
+            </div>
+          </b-col>
+
         </b-row>
 
 
@@ -114,15 +115,6 @@
 
         <b-row class="pt-4 pb-4 version card-gradient-2">
 
-          <b-col md="4">
-            <div class="media">
-              <div class="image-block" style="background-image: url(/img/mini.jpg)">
-                  <!-- <img class="img-verison" src="img/mini.jpg"> -->
-              </div>
-              <!--<div class="media ml-2-body">-->
-              <!--</div>-->
-            </div>
-          </b-col>
           <b-col md="8" class="pt-2 card-version">
               <div>
                 <h2>Версия "мини"</h2>
@@ -144,6 +136,16 @@
                   Купить
                 </b-button>
           </b-col>
+          <b-col md="4">
+            <div class="media mr-2">
+              <div class="image-block" style="background-image: url(/img/mini.jpg)">
+                  <!-- <img class="img-verison" src="img/mini.jpg"> -->
+              </div>
+              <!--<div class="media ml-2-body">-->
+              <!--</div>-->
+            </div>
+          </b-col>
+
         </b-row>
 
 
@@ -225,7 +227,7 @@ ol {
   //
 
 
-  box-shadow: inset 0 0 16px #6a6f4d;
+  box-shadow: inset 2px 2px 4px $yellow-maxdark;
     // padding: 8px;
     border-radius: 12px;
     width: 100%;

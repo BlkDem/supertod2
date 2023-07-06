@@ -18,12 +18,12 @@
           </b-col>
           <b-col md="8" class="card-version">
             <div class="">
-              <h2>Новинка! SuperTOD III Standart</h2>
-              <h4 class="mb-4 mx-2">Усройство оснащено выносным пультом управления с OLED дисплеем и функцией вольтметра. </h4>
+              <h2 class="mb-4">Новинка! SuperTOD III Standart</h2>
+              <h4 class="mb-4 mx-2">Усройство оснащено выносным пультом управления, OLED дисплеем и функцией вольтметра. </h4>
               <div class="body mb-4">
                   <ol>
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Выносной пульт управления </li>
-                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Яркий хорошо читаемый OLED дисплей</li>
+                    <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Хорошо читаемый OLED дисплей</li>
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Программируемые функции</li>
                   </ol>
                 </div>
