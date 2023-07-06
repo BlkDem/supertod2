@@ -103,11 +103,11 @@
                 <div>
                   <ModeList />
               </div>
+              <p class="text-dark h6 p-4">* режим 2Н+4LOW в версии под селектор GM является оциональным, и оговаривается при заказе</p>
               <b-button @click="goShop('https://umolab-devices.com/gm')"
                 class="btn btn-default">
                 Купить
               </b-button>
-              <p class="text-dark h6 p-4">* режим 2Н+4LOW в версии под селектор GM является оциональным, и оговаривается при заказе</p>
           </b-col>
         </b-row>
 
