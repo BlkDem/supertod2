@@ -12,7 +12,7 @@
 
             <b-col md="4">
               <div class="main-img">
-                <img src="/img/llogo.jpg" class="img-responsive">
+                <!-- <img src="/img/llogo.jpg" class="img-responsive"> -->
               </div>
             </b-col>
 
@@ -151,10 +151,13 @@ section {
 
 .main-img{
   width: 100%;
+  height: 100%;
   margin-bottom: 32px;
   margin-left: 8px;
   box-shadow: inset 1px 1px 2px $yellow-maxdark;
   border-radius: 8px;
+  background-image: url(/img/llogo.jpg);
+  background-size: cover;
 }
 
 .img-responsive {

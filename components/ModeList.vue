@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h4 class="mx-2">Список всех режимов</h4>
-    <div class="scew">
+    <h4 class="px-4 mx-4">Список всех режимов</h4>
+    <div class="scew m-4">
       <ul class="pb-4">
         <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>2Н - задний привод</li>
         <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Авто - штатный режим</li>

@@ -17,9 +17,9 @@
             </div>
           </b-col>
           <b-col md="8" class="pt-2 card-version">
-            <div>
-              <h2>Супертод 3 Standart</h2>
-              <h4 class="mb-4 mx-2">Выносной пульт управления с OLED дисплеем и вольтметром. </h4>
+            <h2>Супертод 3 Standart</h2>
+            <div class="m-4">
+              <h4 class="mb-4 mx-4">Выносной пульт управления с OLED дисплеем и вольтметром. </h4>
               <div class="body">
                   <ol>
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Выносной пульт управления </li>
@@ -40,9 +40,9 @@
 
         <b-row class="row pt-4 pb-4 version card-gradient-2">
           <b-col md="8" class="pt-2 card-version">
-              <div>
-                <h2>Версия LCD на место штатного "компаса"</h2>
-                <h4 class="mb-4 mx-2">Устройство, гармонично вписывающееся в салон. Управляется кнопками штатного "компаса". </h4>
+            <h2>Версия LCD на место штатного "компаса"</h2>
+              <div class="m-4">
+                <h4 class="mb-4 mx-4">Устройство, гармонично вписывающееся в салон. Управляется кнопками штатного "компаса". </h4>
                 <div class="body">
                   <ol>
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Обновленная версия 3.7 </li>
@@ -56,18 +56,17 @@
               <div>
                 <ModeList />
               </div>
-              <b-button @click="goShop('https://umolab-devices.com/lcd')" class="btn btn-default">
+              <div class="pay-btn-right">
+                <b-button @click="goShop('https://umolab-devices.com/lcd')" class="btn btn-default">
                   Купить
-              </b-button>
+                </b-button>
+              </div>
           </b-col>
           <b-col md="4">
             <div class="media mb-0">
               <div class="image-block" style="background-image: url(/img/item.jpg)">
                       <!-- <img class="img-verison" src="img/item.jpg"> -->
               </div>
-              <!--<div class="media ml-2-body">-->
-
-              <!--</div>-->
             </div>
           </b-col>
 
@@ -89,9 +88,9 @@
             </div>
           </b-col>
           <b-col md="8" class="pt-2 card-version">
-              <div>
-                <h2>Версия под селектор GM</h2>
-                <h4 class="mb-4 mx-2">Версия устройства, позволяющая заменить штатный селектор Sorento на селектор GM</h4>
+            <h2>Версия под селектор GM</h2>
+              <div class="m-4">
+                <h4 class="mb-4 mx-4">Версия устройства, позволяющая заменить штатный селектор Sorento на селектор GM</h4>
                 <div class="body">
                   <ol>
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Самая технологичная версия</li>
@@ -116,9 +115,9 @@
         <b-row class="pt-4 pb-4 version card-gradient-2">
 
           <b-col md="8" class="pt-2 card-version">
-              <div>
-                <h2>Версия "мини"</h2>
-                <h4 class="mb-4 mx-2">Самая доступная, но полностью функциональная версия SuperTOD II / Супертод 2. </h4>
+            <h2>Версия "мини"</h2>
+              <div class="m-4">
+                <h4 class="mb-4 mx-4">Самая доступная, но полностью функциональная версия SuperTOD II / Супертод 2. </h4>
                 <div class="body">
                 <ol>
                   <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Самое доступное устройство</li>
@@ -131,18 +130,18 @@
                 <div>
                   <ModeList />
               </div>
+              <div class="pay-btn-right">
                 <b-button @click="goShop('https://umolab-devices.com/mini')"
                   class="btn btn-default">
                   Купить
                 </b-button>
+              </div>
           </b-col>
           <b-col md="4">
             <div class="media mb-0">
               <div class="image-block" style="background-image: url(/img/mini.jpg)">
                   <!-- <img class="img-verison" src="img/mini.jpg"> -->
               </div>
-              <!--<div class="media ml-2-body">-->
-              <!--</div>-->
             </div>
           </b-col>
 
@@ -246,6 +245,11 @@ ol {
   font-size: 1.5rem;
   box-shadow: 2px 2px 4px black;
   width: 200px;
+}
+
+.pay-btn-right {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 @media (max-width: 500px) {
