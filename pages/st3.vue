@@ -180,19 +180,4 @@ li {
   }
 }
 
-.card-gradient-1 {
-    background: rgb(217,210,199);
-    background: -moz-linear-gradient(45deg, rgba(217,210,199,1) 0%, rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(217,210,199,1) 0%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(45deg, rgb(128 128 128) 0%, rgb(194 190 190 / 48%) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9d2c7",endColorstr="#ffffff",GradientType=1);
-}
-
-.card-gradient-2 {
-    background: rgb(175,208,207);
-    background: -moz-linear-gradient(45deg, rgba(175,208,207,1) 0%, rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(175,208,207,1) 0%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(45deg, rgb(128 128 128 / 63%) 0%, rgb(194 190 190 / 88%) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#afd0cf",endColorstr="#ffffff",GradientType=1);
-}
 </style>
