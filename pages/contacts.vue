@@ -147,11 +147,11 @@ li {
 }
 
 .media {
-  background: url(https://i.ibb.co/nDfq5TQ/HTB1r-AELVrrp-K1-Rj-SZTEq6-AWAVXah.jpg);
+  background: url(/bg/contact.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 8px;
-  mix-blend-mode: overlay;
+  // mix-blend-mode: overlay;
   opacity: 0.9;
   margin-left: 8px;
   box-shadow: inset 0 0 8px grey;
