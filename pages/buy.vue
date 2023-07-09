@@ -187,7 +187,7 @@ section {
 }
 
 h2 {
-  margin-left: 0;
+  padding-left: 0;
 }
 
 h3 {
