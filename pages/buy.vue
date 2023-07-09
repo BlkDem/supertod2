@@ -186,6 +186,10 @@ section {
   @include border-radius-4px;
 }
 
+h2 {
+  margin-left: 0;
+}
+
 h3 {
   // padding-bottom: 8px;
   // padding-top: 4px;
