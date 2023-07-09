@@ -10,7 +10,9 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description',
           content: 'Supertod, SuperTOD II, SuperTOD III, купить супертод, купить супертод 2, купить супертод 3, купить супертод дешево' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'yandex-verification', content: 'fc9cb000c9976890' }
+
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
