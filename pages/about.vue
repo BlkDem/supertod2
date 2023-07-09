@@ -22,8 +22,8 @@
                <div class="m-4">SuperTOD II, или Супертод 2/3, устройство, предназначенное для ручного управления раздаточной коробкой автомобилей KIA Sorento BL 2002-2009, 2011 годов выпуска и других автомобилей,
                оснащенных совместимой трансмиссией. </div>
                </div>
-              <div class="text-center">
-                <b-button v-b-toggle.collapse-1 class="btn btn-secondary btn-sm w-100">Подробнее...</b-button>
+              <div class="ml-4">
+                <b-button v-b-toggle.collapse-1 class="btn btn-secondary btn-sm">Подробнее...</b-button>
               </div>
               <b-collapse id="collapse-1" class="mt-2">
                 <b-card class="p-2 m-2">

@@ -53,14 +53,17 @@ h1 {
 
 h2 {
   font-size: 1.6rem;
-  background-color: white;
-  color: #d5ce5e;
-  text-align: center;
+  // background-color: white;
+  color: #aab280;
+  // color: #d5ce5e;
+  // text-align: center;
   padding-bottom: 12px;
   padding-top: 8px;
   border-radius: 8px;
-  box-shadow: inset 1px 1px 2px #292005;
-  background: linear-gradient(165deg, #6a6f4d, #999f70 10%, #677032 50%, #949a70 90%, #6a6f4d);
+  // box-shadow: inset 1px 1px 2px #292005;
+  margin-left: 48px;
+  // background: linear-gradient(165deg, #6a6f4d, #999f70 10%, #677032 50%, #949a70 90%, #6a6f4d);
+  // transition: all .5s;
   // mix-blend-mode: hard-light;
   // text-transform: uppercase;
 }
