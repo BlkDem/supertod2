@@ -126,7 +126,7 @@
 
 </template>
 
-<script lang="ts">
+<script>
 // import { ref } from 'vue';
 import DefaultLayout from '~/layout/DefaultLayout.vue';
 import { getData } from '~/services/DataService';
@@ -148,11 +148,11 @@ export default {
 
 
   methods: {
-    goShop(link: string) {
+    goShop(link) {
       window.location.href=link
     },
 
-    async getPrice(deviceName: string) {
+    async getPrice(deviceName) {
       try {
         const response = await getData(deviceName);
         const price = response?.data?.data[0]?.price?.split('.')[0];
