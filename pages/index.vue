@@ -33,7 +33,7 @@
               <ModeList />
             </div>
               <div class="pay-btn pay-btn-left">
-                <b-button @click="goShop('https://umolab-devices.com/st')" class="btn btn-default ml-4">
+                <b-button @click="goShop('https://umolab-devices.com/st')" class="btn btn-default">
                   <b-icon icon="cart2" scale="1" class="mr-2"></b-icon> Купить
                 </b-button>
               </div>
@@ -60,7 +60,7 @@
                 <ModeList />
               </div>
               <div class="pay-btn pay-btn-right">
-                <b-button @click="goShop('https://umolab-devices.com/lcd')" class="btn btn-default mr-4">
+                <b-button @click="goShop('https://umolab-devices.com/lcd')" class="btn btn-default">
                   <b-icon icon="cart2" scale="1" class="mr-2"></b-icon> Купить
                 </b-button>
               </div>
@@ -108,7 +108,7 @@
               <p class="h6 p-4 text-info">* режим 2Н+4LOW в версии под селектор GM является оциональным, и оговаривается при заказе</p>
             <div class="pay-btn pay-btn-left">
               <b-button @click="goShop('https://umolab-devices.com/gm')"
-                class="btn btn-default ml-4">
+                class="btn btn-default">
                 <b-icon icon="cart2" scale="1" class="mr-2"></b-icon> Купить
               </b-button>
             </div>
@@ -137,7 +137,7 @@
               </div>
               <div class="pay-btn pay-btn-right">
                 <b-button @click="goShop('https://umolab-devices.com/mini')"
-                  class="btn btn-default mr-4">
+                  class="btn btn-default">
                   <b-icon icon="cart2" scale="1" class="mr-2"></b-icon> Купить
                 </b-button>
               </div>
@@ -260,7 +260,7 @@ ol {
 }
 
 .pay-btn {
-  padding-top: 12px;
+  padding-top: 22px;
   border-top: 2px solid $yellow-inactive;
 }
 .pay-btn-right {
