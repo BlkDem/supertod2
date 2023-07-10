@@ -28,7 +28,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Переключатель на три положения</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center price-cost price_gradient"> 4 900 ₽</h2>
+                    <h2 class="text-center price-cost price_gradient">{{ priceMini }} ₽</h2>
                     <b-button @click="goShop('https://umolab-devices.com/mini')" block size="lg" bold>
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -57,7 +57,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Регулируемая яркость</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center price-cost price_gradient">8 700 ₽</h2>
+                    <h2 class="text-center price-cost price_gradient">{{ priceLcd }} ₽</h2>
                     <b-button @click="goShop('https://umolab-devices.com/lcd')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -83,7 +83,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Качественный селектор</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center price-cost price_gradient">7 900 ₽</h2>
+                    <h2 class="text-center price-cost price_gradient">{{ priceGM }} ₽</h2>
                     <b-button @click="goShop('https://umolab-devices.com/gm')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -108,7 +108,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Программируемые функции</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center price-cost price_gradient">9 500 ₽</h2>
+                    <h2 class="text-center price-cost price_gradient">{{ priceSt3 }} ₽</h2>
                     <b-button @click="goShop('https://umolab-devices.com/st')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -126,20 +126,54 @@
 
 </template>
 
-<script setup lang="ts">
-// import { omMounted } from 'vue'
-import DefaultLayout from '~/layout/DefaultLayout.vue'
-import { getData } from '~/services/DataService'
+<script lang="ts">
+// import { ref } from 'vue';
+import DefaultLayout from '~/layout/DefaultLayout.vue';
+import { getData } from '~/services/DataService';
 
-function goShop(link: string) {
-  window.location.href=link
+export default {
+
+  components: {
+    DefaultLayout,
+  },
+
+  data() {
+    return {
+      priceGM:   '7 900',
+      priceMini: '4 900',
+      priceLcd:  '8 700',
+      priceSt3:  '9 500',
+    }
+  },
+
+
+  methods: {
+    goShop(link: string) {
+      window.location.href=link
+    },
+
+    async getPrice(deviceName: string) {
+      try {
+        const response = await getData(deviceName);
+        const price = response?.data?.data[0]?.price?.split('.')[0];
+        console.log('Current price for ' + deviceName, price);
+        return price;
+      } catch (e) {
+        console.error('Can not update price from service', e);
+      }
+    }
+  },
+
+
+  async mounted() {
+    this.priceMini = await this.getPrice('ST-II-MINI') ?? '4 900';
+    this.priceLcd = await this.getPrice('ST-II-LCD') ?? '8 700';
+    this.priceGM = await this.getPrice('ST-II-GM') ?? '7 900';
+    this.priceSt3 = await this.getPrice('ST-III-ST') ?? '9 500';
+  },
+
 }
 
-import { onMounted } from 'vue';
-  onMounted(async () => {
-    const response = await getData();
-    console.log(response?.data);
-  })
 </script>
 
 <style lang="scss" scoped>
