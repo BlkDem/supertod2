@@ -32,8 +32,11 @@
 
               <ModeList />
             </div>
-                <b-button @click="goShop('https://umolab-devices.com/st')" class="btn btn-default">
-                    Купить</b-button>
+              <div class="pay-btn pay-btn-left">
+                <b-button @click="goShop('https://umolab-devices.com/st')" class="btn btn-default ml-4">
+                  <b-icon icon="cart2" scale="1" class="mr-2"></b-icon> Купить
+                </b-button>
+              </div>
           </b-col>
         </b-row>
 
@@ -56,9 +59,9 @@
               <div>
                 <ModeList />
               </div>
-              <div class="pay-btn-right">
-                <b-button @click="goShop('https://umolab-devices.com/lcd')" class="btn btn-default">
-                  Купить
+              <div class="pay-btn pay-btn-right">
+                <b-button @click="goShop('https://umolab-devices.com/lcd')" class="btn btn-default mr-4">
+                  <b-icon icon="cart2" scale="1" class="mr-2"></b-icon> Купить
                 </b-button>
               </div>
           </b-col>
@@ -102,11 +105,13 @@
                 <div>
                   <ModeList />
               </div>
-              <p class="h6 p-4">* режим 2Н+4LOW в версии под селектор GM является оциональным, и оговаривается при заказе</p>
+              <p class="h6 p-4 text-info">* режим 2Н+4LOW в версии под селектор GM является оциональным, и оговаривается при заказе</p>
+            <div class="pay-btn pay-btn-left">
               <b-button @click="goShop('https://umolab-devices.com/gm')"
-                class="btn btn-default">
-                Купить
+                class="btn btn-default ml-4">
+                <b-icon icon="cart2" scale="1" class="mr-2"></b-icon> Купить
               </b-button>
+            </div>
           </b-col>
         </b-row>
 
@@ -130,10 +135,10 @@
                 <div>
                   <ModeList />
               </div>
-              <div class="pay-btn-right">
+              <div class="pay-btn pay-btn-right">
                 <b-button @click="goShop('https://umolab-devices.com/mini')"
-                  class="btn btn-default">
-                  Купить
+                  class="btn btn-default mr-4">
+                  <b-icon icon="cart2" scale="1" class="mr-2"></b-icon> Купить
                 </b-button>
               </div>
           </b-col>
@@ -247,9 +252,16 @@ ol {
   width: 200px;
 }
 
+.pay-btn {
+  padding-top: 12px;
+  border-top: 2px solid $yellow-inactive;
+}
 .pay-btn-right {
   display: flex;
   flex-direction: row-reverse;
+}
+.pay-btn-left {
+
 }
 
 @media (max-width: 500px) {
