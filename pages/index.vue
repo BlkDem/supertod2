@@ -250,6 +250,13 @@ ol {
   font-size: 1.5rem;
   box-shadow: 2px 2px 4px black;
   width: 200px;
+  background-color: #aab28052;
+  transition: all .5s;
+}
+
+.btn:hover {
+  background-color: rgba(164, 184, 109, 0.4);
+  border-radius: 5%/20%;
 }
 
 .pay-btn {

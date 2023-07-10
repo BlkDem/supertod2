@@ -23,7 +23,7 @@
                оснащенных совместимой трансмиссией. </div>
                </div>
               <div class="ml-4">
-                <b-button v-b-toggle.collapse-1 class="btn btn-secondary btn-sm">Подробнее...</b-button>
+                <b-button v-b-toggle.collapse-1 class="btn">Подробнее...</b-button>
               </div>
               <b-collapse id="collapse-1" class="mt-2">
                 <b-card class="p-2 m-2">
@@ -149,6 +149,18 @@ section {
   margin-top: 72px;
 }
 
+.btn {
+  box-shadow: 2px 2px 4px black;
+  width: 200px;
+  background-color: #aab28052;
+  transition: all .5s;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+  background-color: rgba(164, 184, 109, 0.4);
+  border-radius: 5%/20%;
+}
+
 .main-img{
   width: 100%;
   height: 100%;
@@ -166,13 +178,13 @@ section {
   border-radius: 8px;
 }
 
-.btn-secondary {
-  filter: drop-shadow(2px 2px 2px black);
-}
+// .btn-secondary {
+//   filter: drop-shadow(2px 2px 2px black);
+// }
 
-.btn-secondary:focus {
-  border: 0;
-}
+// .btn-secondary:focus {
+//   border: 0;
+// }
 
 .row {
   // margin-left: 35px;
