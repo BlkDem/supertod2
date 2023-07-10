@@ -238,11 +238,11 @@ ol {
   padding: 8px 8px;
 }
 
-.btn {
-  font-size: 1.5rem;
-  box-shadow: 2px 2px 4px black;
-  // width: 200px;
-}
+// .btn {
+//   font-size: 1.5rem;
+//   box-shadow: 2px 2px 4px black;
+//   // width: 200px;
+// }
 
 .body {
   min-height: 303px;

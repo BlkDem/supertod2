@@ -43,7 +43,7 @@
         </div>
 
               <div class="text-left mx-4">
-                <b-button @click="goShop('https://umolab-devices.com/st')" class="btn btn-default">
+                <b-button @click="goShop('https://umolab-devices.com/st')" class="buy-btn">
                   Купить
                 </b-button>
               </div>
@@ -157,7 +157,7 @@ li {
   width: 20vw;
   height: auto;
 }
-.btn {
+.buy-btn {
   font-size: 1.5rem;
   box-shadow: 2px 2px 4px black;
   width: 200px;
@@ -171,7 +171,7 @@ li {
   .img-verison {
     width: 100%;
   }
-  .btn {
+  .buy-btn {
     width: 100%;
   }
 

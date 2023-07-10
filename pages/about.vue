@@ -198,5 +198,10 @@ section {
     margin-left: -15px;
     margin-right: -15px;
   }
+
+  .main-img {
+    height: 350px;
+    margin-left: 0;
+  }
 }
 </style>
