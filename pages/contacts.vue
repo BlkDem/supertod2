@@ -19,7 +19,7 @@
           <b-col md="8" class="pt-2 card-version">
             <div class="mr-2">
               <h2>Связаться с нами</h2>
-              <div class="body p-4">
+              <div class="body">
                 <div class="contact">
                   <a href="http://t.me/supertod" target="_blank" >
                     <b-icon icon="telegram" scale="2" class="mx-4"></b-icon>
