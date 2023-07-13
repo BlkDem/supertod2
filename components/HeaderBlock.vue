@@ -57,7 +57,8 @@ li {
 }
 
 .presentation {
-  background: #3e3e3e url(/img/bg3.jpg) right no-repeat;
+  background: #3e3e3e url(https://i.ibb.co/x2nLgsR/bg3.jpg) right no-repeat;
+  // background: #3e3e3e url(/img/bg3.jpg) right no-repeat;
   background-size: cover;
   color: white;
   text-shadow: 0 1px 0 rgba(0,0,0,0.3);
