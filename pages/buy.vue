@@ -28,7 +28,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Переключатель на три положения</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center price-cost price_gradient">{{ priceMini }}</h2>
+                    <h2 class="text-center price-cost price_gradient">{{ priceMini }}  {{ currency }}</h2>
                     <b-button @click="goShop('https://umolab-devices.com/mini')" block size="lg" bold>
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -57,7 +57,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Регулируемая яркость</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center price-cost price_gradient">{{ priceLcd }}</h2>
+                    <h2 class="text-center price-cost price_gradient">{{ priceLcd }}  {{ currency }}</h2>
                     <b-button @click="goShop('https://umolab-devices.com/lcd')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -83,7 +83,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Качественный селектор</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center price-cost price_gradient">{{ priceGM }} </h2>
+                    <h2 class="text-center price-cost price_gradient">{{ priceGM }}  {{ currency }}</h2>
                     <b-button @click="goShop('https://umolab-devices.com/gm')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -108,7 +108,7 @@
                     <li><b-icon icon="check-square" scale="1" class="mr-2 yellow-active"></b-icon>Программируемые функции</li>
                   </ol>
                   <div class="buy-block">
-                    <h2 class="text-center price-cost price_gradient">{{ priceSt3 }} </h2>
+                    <h2 class="text-center price-cost price_gradient">{{ priceSt3 }} {{ currency }}</h2>
                     <b-button @click="goShop('https://umolab-devices.com/st')" block size="lg">
                       <b-icon icon="cart2" scale="1" class="mr-2"></b-icon>
                       Купить
@@ -167,10 +167,10 @@ export default {
 
 
   async created() {
-    this.priceMini = await this.getPrice('ST-II-MINI') ?? '5 400' + this.currency;
-    this.priceLcd = await this.getPrice('ST-II-LCD') ?? '8 700' + this.currency;
-    this.priceGM = await this.getPrice('ST-II-GM') ?? '7 900' + this.currency;
-    this.priceSt3 = await this.getPrice('ST-III-ST') ?? '9 500' + this.currency;
+    this.priceMini = Math.ceil(await this.getPrice('ST-II-MINI') ?? '5100').toLocaleString('ru-RU');
+    this.priceLcd = Math.ceil(await this.getPrice('ST-II-LCD') ?? '8700').toLocaleString('ru-RU');
+    this.priceGM = Math.ceil(await this.getPrice('ST-II-GM') ?? '7900').toLocaleString('ru-RU');
+    this.priceSt3 = Math.ceil(await this.getPrice('ST-III-ST') ?? '9500').toLocaleString('ru-RU');
   },
 
 }
