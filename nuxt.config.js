@@ -73,13 +73,13 @@ export default {
     '@nuxtjs/proxy',
   ],
 
-  axios: {
-    proxy: true
-  },
+  // axios: {
+  //   proxy: true
+  // },
 
-  proxy: {
-    '/api/': { target: 'https://iotman.blkdem.ru/', pathRewrite: {'^/api/': ''}, changeOrigin: true }
-  },
+  // proxy: {
+  //   '/api/': { target: 'https://iotman.blkdem.ru/', pathRewrite: {'^/api/': ''}, changeOrigin: true }
+  // },
 
   bootstrapVue: {
     icons: true
